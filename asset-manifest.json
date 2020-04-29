@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/Demographic-Predictor-App/static/css/main.fe4d164b.chunk.css",
-    "main.js": "/Demographic-Predictor-App/static/js/main.afd3b644.chunk.js",
-    "main.js.map": "/Demographic-Predictor-App/static/js/main.afd3b644.chunk.js.map",
+    "main.css": "/Demographic-Predictor-App/static/css/main.681cac67.chunk.css",
+    "main.js": "/Demographic-Predictor-App/static/js/main.b78e661d.chunk.js",
+    "main.js.map": "/Demographic-Predictor-App/static/js/main.b78e661d.chunk.js.map",
     "runtime-main.js": "/Demographic-Predictor-App/static/js/runtime-main.f5c48448.js",
     "runtime-main.js.map": "/Demographic-Predictor-App/static/js/runtime-main.f5c48448.js.map",
-    "static/js/2.50a7a69c.chunk.js": "/Demographic-Predictor-App/static/js/2.50a7a69c.chunk.js",
-    "static/js/2.50a7a69c.chunk.js.map": "/Demographic-Predictor-App/static/js/2.50a7a69c.chunk.js.map",
+    "static/js/2.8f3a59b9.chunk.js": "/Demographic-Predictor-App/static/js/2.8f3a59b9.chunk.js",
+    "static/js/2.8f3a59b9.chunk.js.map": "/Demographic-Predictor-App/static/js/2.8f3a59b9.chunk.js.map",
     "index.html": "/Demographic-Predictor-App/index.html",
-    "precache-manifest.09575dee4a0d1a36ea014f9a6997606d.js": "/Demographic-Predictor-App/precache-manifest.09575dee4a0d1a36ea014f9a6997606d.js",
+    "precache-manifest.236f19ca75abe5c130a3577a8acdfeb3.js": "/Demographic-Predictor-App/precache-manifest.236f19ca75abe5c130a3577a8acdfeb3.js",
     "service-worker.js": "/Demographic-Predictor-App/service-worker.js",
-    "static/css/main.fe4d164b.chunk.css.map": "/Demographic-Predictor-App/static/css/main.fe4d164b.chunk.css.map",
-    "static/js/2.50a7a69c.chunk.js.LICENSE.txt": "/Demographic-Predictor-App/static/js/2.50a7a69c.chunk.js.LICENSE.txt"
+    "static/css/main.681cac67.chunk.css.map": "/Demographic-Predictor-App/static/css/main.681cac67.chunk.css.map",
+    "static/js/2.8f3a59b9.chunk.js.LICENSE.txt": "/Demographic-Predictor-App/static/js/2.8f3a59b9.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.f5c48448.js",
-    "static/js/2.50a7a69c.chunk.js",
-    "static/css/main.fe4d164b.chunk.css",
-    "static/js/main.afd3b644.chunk.js"
+    "static/js/2.8f3a59b9.chunk.js",
+    "static/css/main.681cac67.chunk.css",
+    "static/js/main.b78e661d.chunk.js"
   ]
 }

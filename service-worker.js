@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Demographic-Predictor-App/precache-manifest.09575dee4a0d1a36ea014f9a6997606d.js"
+  "/Demographic-Predictor-App/precache-manifest.236f19ca75abe5c130a3577a8acdfeb3.js"
 );
 
 self.addEventListener('message', (event) => {
