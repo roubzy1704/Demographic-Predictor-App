@@ -14,7 +14,7 @@ body {
 
 .App {
 	text-align: center;
-	font-family: "Source Sans Pro", sans-serif;
+	font-family: "Roboto", sans-serif;
 	min-height: 100vh; /* will cover the 100% of viewport */
 	overflow: auto;
 	padding-bottom: 80px; /* height of your footer */
@@ -32,6 +32,20 @@ body {
 }
 .App h5 {
 	font-family: "Lato", sans-serif;
+}
+.instructions {
+	margin-bottom: 15px;
+}
+
+.instructionText {
+	border: 1px solid black;
+	padding: 10px;
+	margin: 10px;
+	display: none;
+	font-family: "Raleway", sans-serif;
+	color: black;
+	background-image: url("https://www.transparenttextures.com/patterns/padded.png");
+	/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 
 .form-group input {

@@ -7,7 +7,6 @@ import Error from "../components/Error";
 import axios from "axios";
 import Clarifai from "clarifai";
 import _ from "lodash";
-require("dotenv").config();
 
 function App() {
 	const [image, setImage] = useState("");
@@ -24,8 +23,9 @@ function App() {
 		//set error state to false, just in case it was true prior
 		//reset result array
 		setLoading(true); //*Loading set to true
+		setImage(url); //set Image
+		//*Add a set timeout to load Image
 		setTimeout(() => {
-			setImage(url); //*Add a set timeout here for setting Image
 			setLoading(false); //*set loading False
 		}, 1000);
 		setBoundingArray([]);
@@ -57,10 +57,11 @@ function App() {
 				//reset result array
 				let image = response.data[0].urls.full;
 				setLoading(true); //*Loading set to true
+				setImage(image); //set Image
+				//*Add a set timeout to load Image
 				setTimeout(() => {
-					setImage(image); //*Add a set timeout here for setting Image
 					setLoading(false); //*set loading False
-				}, 1000);
+				}, 2000);
 
 				setBoundingArray([]);
 				setError(false);
@@ -180,15 +181,89 @@ function App() {
 		setImageHeight(height);
 	}
 
+	function notExistImage() {
+		//this axios call is here to enable me to get a different image from
+		//https://www.thispersondoesnotexist.com/image
+		//since we have to refresh the URL to get a second image, the axios get acts as a refresh
+		//dont know if this is the right way but it worked out
+		axios({
+			method: "get",
+			url: "https://www.thispersondoesnotexist.com/image",
+		});
+		let person = "https://www.thispersondoesnotexist.com/image";
+
+		setLoading(true); //*Loading set to true
+		setImage(person); //set Image
+		//*Add a set timeout to load Image
+		setTimeout(() => {
+			setLoading(false); //*set loading False
+		}, 1000);
+		setBoundingArray([]);
+		setError(false);
+		setResults([]);
+	}
+
+	function toggleText() {
+		let text = document.getElementsByClassName("instructionText");
+		if (text[0].style.display === "block") {
+			text[0].style.display = "none";
+			document.getElementsByClassName("instructions")[0].innerHTML =
+				"Show Instructions";
+		} else {
+			text[0].style.display = "block";
+			document.getElementsByClassName("instructions")[0].innerHTML =
+				"Hide Instructions";
+		}
+	}
+
 	return (
 		<div className="App">
 			<h1>{_.upperCase("Demographic Predictor")}</h1>
+			<button className="instructions btn btn-info" onClick={toggleText}>
+				Show Instructions
+			</button>
+			<div className="instructionText">
+				<p>
+					This App uses an individual's image to predict their Age, Gender and
+					Race
+				</p>
+				<p>The predictions are made using the Clarifai API</p>
+				<p>
+					You can paste an image URL or get a random image from Unsplash.com
+				</p>
+				<p>Person does not exist images are computer generated images</p>
+				<p>using a Style-based Generative Adversarial Network (StyleGAN)</p>
+				<p>
+					and are liable to faulty predictions. This is just to show how AI
+					generated Image
+				</p>
+				<p>can trick the prediction algorithm. Learn more by visiting</p>
+				<a
+					href="https:\\www.thispersondoesnotexist.com"
+					target="_blank"
+					rel=" noopener noreferrer"
+					style={{ color: "blue" }}
+				>
+					This Person Does Not Exist
+				</a>
+			</div>
+
 			<SearchField imageurl={imageurl} />
 			<h5>OR</h5>
 			<button className="randomBtn btn btn-secondary" onClick={randomImage}>
 				Random Image
 			</button>
 
+			<button
+				className="randomBtn btn btn-secondary"
+				data-toggle="tooltip"
+				data-placement="top"
+				title="Image is computer generated"
+				onClick={notExistImage}
+				style={{ marginLeft: 10 }}
+			>
+				Person Does not Exist Image
+			</button>
 			<div>
 				{loading ? (
 					<div
