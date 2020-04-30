@@ -234,8 +234,8 @@ function App() {
 				<p>Person does not exist images are computer generated images</p>
 				<p>using a Style-based Generative Adversarial Network (StyleGAN)</p>
 				<p>
-					and are liable to faulty predictions. This is just to show how AI
-					generated Image
+					and are liable to false predictions. This is just to show how AI
+					generated Images
 				</p>
 				<p>can trick the prediction algorithm. Learn more by visiting</p>
 				<a
