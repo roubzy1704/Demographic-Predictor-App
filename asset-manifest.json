@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Demographic-Predictor-App/static/css/main.681cac67.chunk.css",
-    "main.js": "/Demographic-Predictor-App/static/js/main.b78e661d.chunk.js",
-    "main.js.map": "/Demographic-Predictor-App/static/js/main.b78e661d.chunk.js.map",
+    "main.js": "/Demographic-Predictor-App/static/js/main.76380c6e.chunk.js",
+    "main.js.map": "/Demographic-Predictor-App/static/js/main.76380c6e.chunk.js.map",
     "runtime-main.js": "/Demographic-Predictor-App/static/js/runtime-main.f5c48448.js",
     "runtime-main.js.map": "/Demographic-Predictor-App/static/js/runtime-main.f5c48448.js.map",
     "static/js/2.8f3a59b9.chunk.js": "/Demographic-Predictor-App/static/js/2.8f3a59b9.chunk.js",
     "static/js/2.8f3a59b9.chunk.js.map": "/Demographic-Predictor-App/static/js/2.8f3a59b9.chunk.js.map",
     "index.html": "/Demographic-Predictor-App/index.html",
-    "precache-manifest.236f19ca75abe5c130a3577a8acdfeb3.js": "/Demographic-Predictor-App/precache-manifest.236f19ca75abe5c130a3577a8acdfeb3.js",
+    "precache-manifest.77f0691517167e11924dfbc7b337c6d3.js": "/Demographic-Predictor-App/precache-manifest.77f0691517167e11924dfbc7b337c6d3.js",
     "service-worker.js": "/Demographic-Predictor-App/service-worker.js",
     "static/css/main.681cac67.chunk.css.map": "/Demographic-Predictor-App/static/css/main.681cac67.chunk.css.map",
     "static/js/2.8f3a59b9.chunk.js.LICENSE.txt": "/Demographic-Predictor-App/static/js/2.8f3a59b9.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.f5c48448.js",
     "static/js/2.8f3a59b9.chunk.js",
     "static/css/main.681cac67.chunk.css",
-    "static/js/main.b78e661d.chunk.js"
+    "static/js/main.76380c6e.chunk.js"
   ]
 }
