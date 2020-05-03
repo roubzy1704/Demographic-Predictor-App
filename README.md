@@ -1,5 +1,7 @@
 Demographic Predictor App http://roubzy1704.github.io/Demographic-Predictor-App
 
+(Built with React, BootStrap)
+
 This App uses an individual's image to predict their Age, Gender and Race
 
 The predictions are made using the Clarifai API
